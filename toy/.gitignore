@@ -1,0 +1,11 @@
+# Ignore config.yaml file
+config/config.yaml
+
+# Ignore all YAML files in the config directory (optional)
+config/*.yaml
+
+# Ignore other common files and directories
+node_modules/
+*.log
+*.env
+.DS_Store
