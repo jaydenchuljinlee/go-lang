@@ -13,7 +13,7 @@ var DB *sql.DB
 func InitDB() {
 	var err error
 
-	dsn := ""
+	dsn := "test"
 
 	DB, err = sql.Open("mysql", dsn)
 
