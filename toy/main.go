@@ -1,12 +1,14 @@
 package main
 
 import (
-	"socket/redis"
-	"socket/repository"
-	"socket/router"
+	"toy/config"
+	"toy/redis"
+	"toy/repository"
+	"toy/router"
 )
 
 func main() {
+	config.LoadConfig()
 	// Redis 초기화
 	redis.Init()
 

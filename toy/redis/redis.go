@@ -3,8 +3,9 @@ package redis
 import (
 	"context"
 	"log"
-	"socket/domain/dto"
 	"strconv"
+	"toy/config"
+	"toy/domain/dto"
 
 	"github.com/go-redis/redis/v8"
 )
@@ -15,10 +16,12 @@ var (
 )
 
 func Init() {
+	cfg := config.AppConfig.Redis
+
 	Rdb = redis.NewClient(&redis.Options{
-		Addr:     "",
-		Password: "",
-		DB:       0,
+		Addr:     cfg.Addr,
+		Password: cfg.Password,
+		DB:       cfg.DB,
 	})
 
 	_, err := Rdb.Ping(ctx).Result()

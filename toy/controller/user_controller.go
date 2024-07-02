@@ -4,7 +4,7 @@ import (
 	"context"
 	"log"
 	"net/http"
-	"socket/service"
+	"toy/service"
 
 	"github.com/gin-gonic/gin"
 )

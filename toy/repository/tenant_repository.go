@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 	"database/sql"
-	"socket/domain/dto"
+	"toy/domain/dto"
 )
 
 func GetGyCompanyTenantByEmailAndWorkspace(ctx context.Context, email string, workspace string) (*dto.GyTenantUserInfo, error) {

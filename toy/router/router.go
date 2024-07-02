@@ -1,7 +1,7 @@
 package router
 
 import (
-	"socket/controller"
+	"toy/controller"
 
 	"github.com/gin-gonic/gin"
 )

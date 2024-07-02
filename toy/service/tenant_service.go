@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 	"log"
-	"socket/domain/dto"
-	"socket/redis"
-	"socket/repository"
+	"toy/domain/dto"
+	"toy/redis"
+	"toy/repository"
 )
 
 func GetTenantUserInfoAndGoogleInfo(ctx context.Context, workspace string, email string) (*dto.GoogleInfo, error) {
