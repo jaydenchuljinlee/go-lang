@@ -1,6 +1,6 @@
 # Ignore all YAML files in the config directory (optional)
-toy/config/*.yml
-toy/config/*.yaml
+*/config/*.yml
+*/config/*.yaml
 
 # Ignore other common files and directories
 node_modules/
