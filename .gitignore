@@ -2,6 +2,8 @@
 */config/*.yml
 */config/*.yaml
 
+*/config/*.json
+
 # Ignore other common files and directories
 node_modules/
 *.log
